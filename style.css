@@ -1,0 +1,129 @@
+body{
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+.logica{
+    width: 340px;
+    background-color: rgb(236, 236, 236);
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.valores{
+    width: 800px;
+}
+
+h2{
+    background-color: #db2a30;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 150px;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 30px;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+select{
+    width: 300px;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 45px;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: large;
+    color: white;
+    background-color: #db2a30;
+    border: 2px solid #db2a30;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    color: #db2a30;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.baixar{
+    color: #db2a30;
+    background-color: white;
+    width: 330px;
+}
+
+.valores button{
+    margin-bottom: 20px;
+    width: 300px;
+}
+.resultados, .botoes{
+    display: flex;
+    justify-content: space-between;
+}
+.resultados{
+    margin-bottom: 20px;
+}
+#chamada{
+    width: 325px;
+}
+main, nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav{
+    margin-bottom: 20px;
+}
+
+.linha{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.cartao{
+    background-color: #920e13;
+    background-image: linear-gradient(43deg, #a71116 0%, #db2a30 46%, #f0464c 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#turma2{
+    margin-bottom: 60px;
+}
+#resultado{
+    font-size: medium;
+}
+
+strong{color:red;}
+
+@media print{
+    .logica, .linha, nav, .result{
+        display: none;
+    }
+}

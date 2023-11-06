@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontuação Roleta</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Pontuação Roleta</h2>
+
+    <nav>
+        <div>
+            <select id="turma" class="opcao">
+                <option value="">Escolha a Turma</option>
+            
+                <option value="1">6° ano A</option>
+                <option value="2">6° ano B</option>
+                <option value="3">7° ano A</option>
+                <option value="4">7° ano B</option>
+                <option value="5">8° ano A</option>
+                <option value="6">8° ano B</option>
+                <option value="7">9° ano A</option>
+                <option value="8">9° ano B</option>
+                <option value="9">1° ano A - E.M.</option>
+                <option value="10">1° ano B - E.M.</option>
+                <option value="11">2° ano A - E.M.</option>
+                <option value="12">2° ano B - E.M.</option>
+                <option value="13">3° ano A - E.M.</option>
+                <option value="14">3° ano B - E.M.</option>
+            </select>
+        </div>
+    </nav>
+    <div class="linha"><hr></div>
+
+    <main>
+        <div class="logica">
+            <div>
+                <label for="chamada">Insira as Informações</label><br>
+            
+                <input type="number" id="chamada" max="35" min="1" placeholder="N° Chamada" name="chamada">
+                <input type="number" id="aposta" placeholder="Valor Apostado">
+                <input type="number" placeholder="Pontuação" id="valor">
+            </div>
+            <div class="botoes">
+                <button class="icon" onclick="Multiplicacao()">Multiplicação</button>
+                <button class="icon" onclick="PerdeTudo()">Perde Tudo</button>
+            </div>
+
+            <div class="cartao">
+                <div id="turma2">Turma</div>
+                <div id="resultado">Aluno</div>
+                <div id="saldo">Saldo</div>
+            </div>
+
+            <button class="baixar"onclick="window.print()">Baixar Resultados</button>
+        </div>
+        <div class="valores">
+            <div class="result">
+                Pontuações dos Alunos:
+                <button onclick="VerResultados()">Ver Resultados</button>
+            </div>
+
+            <h3 id="nomeTurma"></h3>
+            <div class="resultados">
+                <div id="1ao10"></div>
+                <div id="11ao20"></div>
+                <div id="21ao30"></div>
+                <div id="31ao35"></div>
+            </div>
+
+            <div id="totalDaTurma"></div>
+            <div id="maiorPontuacao"></div>
+
+            <script src="script.js"></script>
+        </div>
+    </main>
+</body>
+</html>
