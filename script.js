@@ -15,6 +15,13 @@ saldoDaTurma = 0;
 function pegaTurma(){
     valorTurma = document.getElementById("turma").value
 
+    
+    if(valorTurma == -1){
+        turma = "5° ano A"
+    }
+    if(valorTurma == 0){
+        turma = "5° ano B"
+    }    
     if(valorTurma == 1){
         turma = "6° ano A"
     }
