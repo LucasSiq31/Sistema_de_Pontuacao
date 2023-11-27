@@ -16,10 +16,10 @@ function pegaTurma(){
     valorTurma = document.getElementById("turma").value
 
     
-    if(valorTurma == -1){
+    if(valorTurma == -2){
         turma = "5° ano A"
     }
-    if(valorTurma == 0){
+    if(valorTurma == -1){
         turma = "5° ano B"
     }    
     if(valorTurma == 1){
